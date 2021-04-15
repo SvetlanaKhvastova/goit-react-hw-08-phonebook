@@ -26,11 +26,7 @@ class App extends Component {
               return routesPage.private ? (
                 <PrivateRoute key={routesPage.id} {...route} />
               ) : (
-                <PublicRoute
-                  key={routesPage.id}
-                  restricted={routesPage.restricted}
-                  {...route}
-                />
+                <PublicRoute key={routesPage.id} restricted {...route} />
               );
             })}
             <Redirect to={"/home"} />

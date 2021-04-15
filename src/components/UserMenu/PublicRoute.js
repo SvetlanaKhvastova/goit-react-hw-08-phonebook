@@ -6,14 +6,14 @@ import authSelectors from "../../redux/auth/auth-selectors";
 const PublicRoute = ({
   component: Component,
   isAuthenticated,
-  restricted,
+
   ...routeProps
 }) => {
   return (
     <Route
       {...routeProps}
       render={(props) =>
-        isAuthenticated && restricted ? (
+        isAuthenticated && routeProps.restricted ? (
           <Redirect to="/contacts" />
         ) : (
           <Component {...props} />
