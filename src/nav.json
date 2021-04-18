@@ -6,7 +6,7 @@
     "path": "/home",
     "exact": true,
     "restricted": false,
-    "private": false
+    "privated": false
     
   },
     {
@@ -16,7 +16,7 @@
     "path": "/contacts",
     "exact": true,
     "restricted": false,
-    "private": true
+    "privated": true
     
     
   },
@@ -28,7 +28,7 @@
     "path": "/signup",
     "exact": true,
     "restricted": true, 
-    "private": false
+    "privated": false
   },
    {
     "id": "4",
@@ -36,8 +36,8 @@
     "name": "LoginPage",
     "path": "/login",
     "exact": true,
-    "restricted": false,
-    "private": false
+    "restricted": true,
+    "privated": false
     
   }
 ]

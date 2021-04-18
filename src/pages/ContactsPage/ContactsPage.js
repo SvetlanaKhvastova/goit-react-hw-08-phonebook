@@ -13,7 +13,7 @@ class ContactsPage extends Component {
   }
   render() {
     return (
-      <div>
+      <>
         <Container>
           <h1>Phonebook</h1>
           <ContactForm />
@@ -23,7 +23,7 @@ class ContactsPage extends Component {
 
           <Contacts />
         </Container>
-      </div>
+      </>
     );
   }
 }

@@ -5,4 +5,4 @@ const getIsAuthenticated = (state) => {
 
 const getUserName = (state) => state.auth.user.name;
 
-export default { getIsAuthenticated, getUserName };
+export { getIsAuthenticated, getUserName };

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Container, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { connect } from "react-redux";
-import authOperations from "../../redux/auth/auth-operations";
+import { authOperations } from "../../redux/auth";
 import s from "./RegisterPage.module.css";
 
 class RegisterPage extends Component {

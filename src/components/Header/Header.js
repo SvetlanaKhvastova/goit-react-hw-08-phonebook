@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import UserMenu from "../UserMenu/UserMenu";
-import authSelectors from "../../redux/auth/auth-selectors";
+import { authSelectors } from "../../redux/auth";
 import s from "./Header.module.css";
 
 const Header = ({ isAuthenticated }) => {

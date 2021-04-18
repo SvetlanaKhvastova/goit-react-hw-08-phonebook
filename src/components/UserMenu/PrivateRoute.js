@@ -1,6 +1,6 @@
 import { Redirect, Route } from "react-router";
 import { connect } from "react-redux";
-import authSelectors from "../../redux/auth/auth-selectors";
+import { authSelectors } from "../../redux/auth";
 
 const PrivateRoute = ({
   component: Component,

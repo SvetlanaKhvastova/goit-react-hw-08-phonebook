@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import authSelectors from "../../redux/auth/auth-selectors";
-import authOperations from "../../redux/auth/auth-operations";
+import { authSelectors } from "../../redux/auth";
+import { authOperations } from "../../redux/auth";
 import defaultAvatar from "./linux-avatar.jpg";
 import { Button } from "react-bootstrap";
 import s from "./UserMenu.module.css";

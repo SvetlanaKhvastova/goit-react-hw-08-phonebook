@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Container, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { connect } from "react-redux";
-import authOperations from "../../redux/auth/auth-operations";
+import { authOperations } from "../../redux/auth";
 import s from "./LoginPage.module.css";
 
 class LoginPage extends Component {
@@ -28,7 +28,7 @@ class LoginPage extends Component {
     const { email, password } = this.state;
 
     return (
-      <div>
+      <>
         <Container>
           <h1>Login Form</h1>
           <Form onSubmit={handleSubmit}>
@@ -62,7 +62,7 @@ class LoginPage extends Component {
             </Button>
           </Form>
         </Container>
-      </div>
+      </>
     );
   }
 }

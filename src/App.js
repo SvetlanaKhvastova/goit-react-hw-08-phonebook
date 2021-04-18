@@ -3,11 +3,11 @@ import { Redirect, Switch } from "react-router";
 import { connect } from "react-redux";
 
 import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import routesPage from "./routes";
 import Header from "./components/Header/Header";
-import authOperations from "./redux/auth/auth-operations";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { authOperations } from "./redux/auth";
 import PrivateRoute from "./components/UserMenu/PrivateRoute";
 import PublicRoute from "./components/UserMenu/PublicRoute";
 
@@ -23,10 +23,10 @@ class App extends Component {
         <Suspense fallback="Loading...">
           <Switch>
             {routesPage.map((route) => {
-              return routesPage.private ? (
-                <PrivateRoute key={routesPage.id} {...route} />
+              return route.privated ? (
+                <PrivateRoute key={route.id} {...route} />
               ) : (
-                <PublicRoute key={routesPage.id} restricted {...route} />
+                <PublicRoute key={route.id} restricted {...route} />
               );
             })}
             <Redirect to={"/home"} />

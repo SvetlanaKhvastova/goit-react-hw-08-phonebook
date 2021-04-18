@@ -1,5 +1,3 @@
-//Redux Tookit
-
 import {
   configureStore,
   getDefaultMiddleware,

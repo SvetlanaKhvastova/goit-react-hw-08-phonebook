@@ -1,8 +1,8 @@
 //Redux Tookit
 
-import { createReducer } from '@reduxjs/toolkit';
-import { combineReducers } from 'redux';
-import * as contactsActions from './todos-actions';
+import { createReducer } from "@reduxjs/toolkit";
+import { combineReducers } from "redux";
+import * as contactsActions from "./todos-actions";
 
 const {
   fetchContactsRequest,
@@ -26,7 +26,7 @@ const items = createReducer([], {
     state.filter(({ id }) => id !== payload),
 });
 
-const filter = createReducer('', {
+const filter = createReducer("", {
   [filterContacts]: (_, { payload }) => payload,
 });
 
